@@ -1,9 +1,9 @@
 /**
  * AP CSA Lab 1.9-1.11 - Method Signatures, Class Methods, and the Math Class
  *
- * Fill in the body of each method below. Do not rename anything, do not change
- * the parameter lists, and do not change the return types. The grader compiles
- * against these exact signatures.
+ * Fill in the body of each method marked TODO below. Do not rename anything,
+ * do not change the parameter lists, and do not change the return types. The
+ * grader compiles against these exact signatures.
  *
  * Every method here is public static, which makes it a CLASS METHOD: it
  * belongs to the class MathLab itself, not to any object. Nothing in this lab
@@ -17,7 +17,7 @@ public class MathLab
     // ---------------------------------------------------------------
     // PART 1: parameters are variables, and arguments are matched by position
     //
-    // Return the total number of minutes in hours hours plus minutes minutes.
+    // Return the total number of minutes in the given hours and minutes.
     //
     // Look at the header below and read it left to right: public, then static,
     // then the return type int, then the name, then the parameter list.
@@ -44,15 +44,15 @@ public class MathLab
     // ---------------------------------------------------------------
     public static int totalMinutes(int hours, int minutes)
     {
-        // TODO Part 1: return the number of minutes in hours hours and
-        // minutes minutes
+        // TODO Part 1: return the number of minutes in the given hours
+        // and minutes
         return 0;
     }
 
     // ---------------------------------------------------------------
     // PART 2: call the method you already wrote
     //
-    // Return the total number of seconds in hours hours plus minutes minutes.
+    // Return the total number of seconds in the given hours and minutes.
     //
     // You already have a method that turns hours and minutes into minutes, so
     // do not do that arithmetic again. Call totalMinutes and multiply what it
@@ -90,7 +90,7 @@ public class MathLab
     }
 
     // ---------------------------------------------------------------
-    // PART 3: a void method returns nothing, so it is a statement of its own
+    // PART 3: a void method returns nothing, so calling it is a statement
     //
     // PRINT one line in exactly this form, with a colon and one space between
     // the name and the count, followed by a newline:
@@ -144,8 +144,8 @@ public class MathLab
     // Example: distanceFromZero(-5) is 5
     // Example: distanceFromZero(17) is 17
     //
-    // Careful: leave BOTH methods in the file. Deleting one of them is the
-    // same as renaming it -- the grader will not find the signature it needs.
+    // Careful: leave BOTH methods in the file. If either one is missing, the
+    // grader will not find the signature it needs.
     // ---------------------------------------------------------------
     public static int distanceFromZero(int n)
     {
@@ -158,9 +158,9 @@ public class MathLab
     //
     // Return how far n is from zero, using Math.abs -- this time for a double.
     //
-    // Nothing here is copied from Part 4a. Because the parameter is a double,
-    // the call Math.abs(n) reaches the double version of abs, which gives a
-    // double back, decimal part and all.
+    // This is a separate method, not a copy of Part 4a. Because the parameter
+    // is a double, the call Math.abs(n) reaches the double version of abs,
+    // which gives a double back, decimal part and all.
     //
     // Example: distanceFromZero(-5.5)  is 5.5
     // Example: distanceFromZero(0.125) is 0.125
@@ -175,7 +175,7 @@ public class MathLab
     }
 
     // ---------------------------------------------------------------
-    // PART 5: Math.sqrt, and one call nested inside another
+    // PART 5: Math.sqrt, with a nested expression as its argument
     //
     // Return the length of the long side of a right triangle whose two short
     // sides are a and b. That length is the square root of a * a + b * b.

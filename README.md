@@ -24,7 +24,8 @@ Plan on 30 to 45 minutes.
 1. Open this folder in your editor.
 1. Open `src/main/java/MathLab.java`. That is the only file you change.
 1. Work down the file. Each part is marked with a comment that starts with
-   `TODO`; replace the placeholder line under it with your own code.
+   `TODO`; replace that comment, and any placeholder `return` under it, with
+   your own code.
 
 To run your program and see your output:
 
@@ -40,7 +41,7 @@ Your teacher will run a separate set of tests on your work when you turn it in.
 | --- | --- | --- |
 | 1 | `totalMinutes(int, int)` | parameters and argument order |
 | 2 | `totalSeconds(int, int)` | calling a method you wrote |
-| 3 | `printLabel(String, int)` | a `void` method prints, it does not return |
+| 3 | `printLabel(String, int)` | a `void` method prints; it does not return |
 | 4a | `distanceFromZero(int)` | `Math.abs` on an `int` |
 | 4b | `distanceFromZero(double)` | the same name, a `double` parameter |
 | 5 | `hypotenuse(double, double)` | `Math.sqrt` with a nested expression |
@@ -54,7 +55,7 @@ Your teacher will run a separate set of tests on your work when you turn it in.
 - [ ] Part 3 prints exactly one line, in the form `"Pencils: 12"`, and no other
       part prints anything.
 - [ ] Both `distanceFromZero` methods are still in the file. They share a name
-      on purpose, and deleting either one counts as renaming it.
+      on purpose, and the grader needs both signatures.
 - [ ] Part 7 includes both ends of the range. Substitute `0.0` for
       `Math.random()` and check the smallest value, then a value just under
       `1.0` and check the largest.
