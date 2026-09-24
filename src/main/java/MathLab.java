@@ -46,7 +46,7 @@ public class MathLab
     {
         // TODO Part 1: return the number of minutes in the given hours
         // and minutes
-        return 0;
+        return (hours * 60) + minutes;
     }
 
     // ---------------------------------------------------------------
@@ -86,7 +86,7 @@ public class MathLab
     public static int totalSeconds(int hours, int minutes)
     {
         // TODO Part 2: call totalMinutes, then multiply its result by 60
-        return 0;
+        return totalMinutes(hours, minutes) * 60;
     }
 
     // ---------------------------------------------------------------
