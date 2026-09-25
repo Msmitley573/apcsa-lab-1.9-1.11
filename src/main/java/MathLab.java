@@ -269,7 +269,7 @@ public class MathLab
     public static int rollInRange(int min, int max)
     {
         // TODO Part 7: return a random int from min to max, both included
-        return (int) (Math.random() * min) + max;
+        return (int) (Math.random() * (max-min+1)) + min;
     }
 
     // ---------------------------------------------------------------
