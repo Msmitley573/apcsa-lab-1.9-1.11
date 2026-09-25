@@ -231,7 +231,7 @@ public class MathLab
     public static int powerOf(int base, int exponent)
     {
         // TODO Part 6: return Math.pow(base, exponent), cast to an int
-        return 0;
+        return (int) Math.pow(base, exponent);
     }
 
     // ---------------------------------------------------------------
@@ -269,7 +269,7 @@ public class MathLab
     public static int rollInRange(int min, int max)
     {
         // TODO Part 7: return a random int from min to max, both included
-        return 0;
+        return (int) (Math.random() * min) + max;
     }
 
     // ---------------------------------------------------------------
